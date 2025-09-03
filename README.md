@@ -1,14 +1,14 @@
 # 🚀 Client Template – Vite + Vue 3 + DaisyUI
 
-Template ini membantu memulai pengembangan **Frontend** modern dengan:
+This template helps you kickstart modern **Frontend** development with:
 
-* ⚡ [Vite](https://vite.dev/) – build & dev server super cepat
-* 🖖 [Vue 3](https://vuejs.org/) – framework progresif untuk UI
-* 🧭 [Vue Router](https://router.vuejs.org/) – routing bawaan Vue
-* 📦 [Pinia](https://pinia.vuejs.org/) – state management resmi Vue
+* ⚡ [Vite](https://vite.dev/) – super-fast build & dev server
+* 🖖 [Vue 3](https://vuejs.org/) – the progressive framework for UI
+* 🧭 [Vue Router](https://router.vuejs.org/) – official Vue routing
+* 📦 [Pinia](https://pinia.vuejs.org/) – official Vue state management
 * 🎨 [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
-* 🌼 [DaisyUI](https://daisyui.com/) – komponen siap pakai + **theming support**
-* ✅ [Vitest](https://vitest.dev/) & [Playwright](https://playwright.dev/) – testing unit & end-to-end
+* 🌼 [DaisyUI](https://daisyui.com/) – prebuilt components + **theming support**
+* ✅ [Vitest](https://vitest.dev/) & [Playwright](https://playwright.dev/) – unit & end-to-end testing
 * 🧹 [ESLint](https://eslint.org/) + [Oxlint](https://oxlint.com/) + [Prettier](https://prettier.io/) – linting & formatting
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)
@@ -20,9 +20,9 @@ Template ini membantu memulai pengembangan **Frontend** modern dengan:
 
 ---
 
-## 📦 Instalasi
+## 📦 Installation
 
-Clone repo lalu install dependencies:
+Clone the repo and install dependencies:
 
 ```sh
 git clone https://github.com/username/client-template-vite-vue.git
@@ -30,33 +30,33 @@ cd client-template-vite-vue
 npm install
 ```
 
-**Node.js version** yang didukung:
+**Supported Node.js versions**:
 
-* `^20.19.0` atau `>=22.12.0`
+* `^20.19.0` or `>=22.12.0`
 
 ---
 
 ## 🛠️ Development
 
-Jalankan local dev server dengan HMR:
+Run local dev server with HMR:
 
 ```sh
 npm run dev
 ```
 
-Buka di [http://localhost:5173](http://localhost:5173).
+Open in [http://localhost:5173](http://localhost:5173).
 
 ---
 
 ## 🏗️ Build
 
-Untuk compile dan minify production build:
+Compile and minify for production:
 
 ```sh
 npm run build
 ```
 
-Preview hasil build:
+Preview the build:
 
 ```sh
 npm run preview
@@ -75,19 +75,19 @@ npm run test:unit
 ### End-to-End Tests (Playwright)
 
 ```sh
-# Install browser (sekali saja)
+# Install browser (only once)
 npx playwright install
 
-# Build dulu sebelum testing di CI
+# Build before running tests in CI
 npm run build
 
-# Jalankan semua e2e test
+# Run all e2e tests
 npm run test:e2e
 
-# Test hanya di Chromium
+# Run only on Chromium
 npm run test:e2e -- --project=chromium
 
-# Test file tertentu
+# Run a specific test file
 npm run test:e2e -- tests/example.spec.js
 
 # Debug mode
@@ -98,13 +98,13 @@ npm run test:e2e -- --debug
 
 ## 🧹 Lint & Format
 
-Lint kode dengan ESLint & Oxlint:
+Lint code with ESLint & Oxlint:
 
 ```sh
 npm run lint
 ```
 
-Format otomatis dengan Prettier:
+Auto-format with Prettier:
 
 ```sh
 npm run format
@@ -112,47 +112,47 @@ npm run format
 
 ---
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 
 ```
 client-template-vite-vue/
-├── public/              # File statis
+├── public/              # Static files
 ├── src/
-│   ├── assets/          # Asset (gambar, ikon, dll.)
-│   ├── components/      # Komponen Vue
-│   ├── stores/          # Store Pinia
-│   ├── views/           # Halaman utama
+│   ├── assets/          # Assets (images, icons, etc.)
+│   ├── components/      # Vue components
+│   ├── stores/          # Pinia stores
+│   ├── views/           # Main views/pages
 │   ├── router/          # Vue Router setup
 │   ├── App.vue          # Root component
-│   └── main.js          # Entry point (JavaScript, bukan TS)
+│   └── main.js          # Entry point (JavaScript, not TS)
 ├── tests/               # Unit & e2e tests
-├── vite.config.js       # Konfigurasi Vite + Tailwind + DaisyUI
+├── vite.config.js       # Vite + Tailwind + DaisyUI config
 └── package.json
 ```
 
 ---
 
-## 🌟 Fitur
+## 🌟 Features
 
-* ⚡ Build super cepat dengan Vite
-* 🌼 Integrasi penuh DaisyUI dengan **theming support** → ubah tema dengan mudah (misalnya light/dark/retro/bumblebee)
-* 📦 Modular dengan Vue 3 Composition API
-* 🧭 Routing bawaan Vue Router
-* 🔒 State management dengan Pinia
-* ✅ Testing siap pakai (unit & e2e)
-* 🧹 Linting + formatting otomatis
-
----
-
-## 🎨 Theming DaisyUI
-
-Template ini sudah terintegrasi dengan **DaisyUI themes**.
-Kamu bisa mengubah tema langsung dari `vite.config.js` atau runtime via `data-theme` attribute.
-
-Referensi tema lengkap: [https://daisyui.com/themes/](https://daisyui.com/themes/)
+* ⚡ Blazing-fast build with Vite
+* 🌼 Full DaisyUI integration with **theming support** → switch themes easily (light/dark/retro/bumblebee, etc.)
+* 📦 Modular Vue 3 Composition API setup
+* 🧭 Vue Router included
+* 🔒 Pinia state management out of the box
+* ✅ Ready-to-use unit & e2e testing
+* 🧹 Auto linting + formatting
 
 ---
 
-## 📜 Lisensi
+## 🎨 DaisyUI Theming
+
+The template comes with **DaisyUI themes** preconfigured.
+You can switch themes directly from `vite.config.js` or at runtime using the `data-theme` attribute.
+
+Full theme list: [https://daisyui.com/themes/](https://daisyui.com/themes/)
+
+---
+
+## 📜 License
 
 [MIT](./LICENSE) © 2025 Kura Ninja
